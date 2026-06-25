@@ -23,7 +23,7 @@ pipeline {
 
                     // alternative solution without Pipeline Utility Steps plugin:
                     // def version = sh (returnStdout: true, script: "grep 'version' package.json | cut -d '\"' -f4 | tr '\\n' '\\0'")
-                      env.IMAGE_NAME = "$version-$BUILD_NUMBER"
+                    //  env.IMAGE_NAME = "$version-$BUILD_NUMBER"
                 }
             }
         }
